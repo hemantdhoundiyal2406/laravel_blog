@@ -14,8 +14,6 @@ services:
         value: production
       - key: APP_DEBUG
         value: "false"
-      - key: APP_KEY
-        generateValue: true
       - key: LOG_CHANNEL
         value: stderr
       - key: SESSION_DRIVER
