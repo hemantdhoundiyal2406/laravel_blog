@@ -13,6 +13,10 @@ if [ -z "${APP_URL:-}" ] && [ -n "${RENDER_EXTERNAL_URL:-}" ]; then
     export APP_URL="${RENDER_EXTERNAL_URL}"
 fi
 
+if [ -z "${APP_URL:-}" ] && [ -n "${RAILWAY_PUBLIC_DOMAIN:-}" ]; then
+    export APP_URL="https://${RAILWAY_PUBLIC_DOMAIN}"
+fi
+
 if [ -z "${APP_KEY:-}" ]; then
     export APP_KEY="$(php artisan key:generate --show --no-ansi)"
 fi
