@@ -21,8 +21,8 @@ RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoload
 FROM php:8.3-apache
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends libpq-dev libzip-dev unzip \
-    && docker-php-ext-install pdo_mysql pdo_pgsql zip \
+    && apt-get install -y --no-install-recommends libonig-dev libpq-dev libzip-dev unzip \
+    && docker-php-ext-install mbstring pdo_mysql pdo_pgsql zip \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
 

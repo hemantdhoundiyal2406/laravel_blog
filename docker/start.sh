@@ -22,7 +22,9 @@ if [ "${DB_CONNECTION:-}" = "sqlite" ]; then
     touch "${DB_DATABASE:-database/database.sqlite}"
 fi
 
-php artisan optimize:clear
+php artisan config:clear || true
+php artisan route:clear || true
+php artisan view:clear || true
 php artisan storage:link || true
 php artisan migrate --force
 
@@ -30,6 +32,7 @@ if [ "${SEED_DATABASE:-false}" = "true" ]; then
     php artisan db:seed --force
 fi
 
+php artisan cache:clear || true
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
