@@ -1,4 +1,4 @@
-# Purely Blog Website Documentation
+# My Blog Website Documentation
 
 ## Project Overview
 

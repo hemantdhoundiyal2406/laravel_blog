@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'About - Purely Blog')
+@section('title', 'About - My Blog')
 
 @section('content')
     <section class="page-hero py-5">
@@ -9,7 +9,7 @@
                 <div class="col-lg-7">
                     <span class="badge-category mb-3">About</span>
                     <h1 class="font-display fw-bold display-5 mb-3">A calm place for better daily living</h1>
-                    <p class="lead text-muted-soft mb-0">Purely Blog shares beginner-friendly ideas about habits, wellness, travel, personal growth, and mindful routines.</p>
+                    <p class="lead text-muted-soft mb-0">My Blog shares beginner-friendly ideas about habits, wellness, travel, personal growth, and mindful routines.</p>
                 </div>
                 <div class="col-lg-5">
                     <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded-4 shadow-sm" alt="Writer desk">

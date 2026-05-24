@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Admin Dashboard') - {{ config('app.name', 'Purely Blog') }}</title>
+    <title>@yield('title', 'Admin Dashboard') - {{ config('app.name', 'My Blog') }}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
             <a class="d-flex align-items-center gap-2 text-white mb-4" href="{{ route('dashboard') }}">
                 <span class="fs-3 text-danger"><i class="bi bi-flower1"></i></span>
                 <span>
-                    <span class="brand-title text-white">Purely</span>
+                    <span class="brand-title text-white">My Blog</span>
                     <span class="brand-subtitle text-white-50">Admin Panel</span>
                 </span>
             </a>

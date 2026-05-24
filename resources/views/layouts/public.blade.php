@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', config('app.name', 'Purely Blog'))</title>
+    <title>@yield('title', config('app.name', 'My Blog'))</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,8 @@
             <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
                 <span class="navbar-brand-mark"><i class="bi bi-flower1"></i></span>
                 <span>
-                    <span class="brand-title">Purely</span>
-                    <span class="brand-subtitle">Balanced mindful living</span>
+                    <span class="brand-title">My Blog</span>
+                    <span class="brand-subtitle">Modern Laravel Blog</span>
                 </span>
             </a>
 

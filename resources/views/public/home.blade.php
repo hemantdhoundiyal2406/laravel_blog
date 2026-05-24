@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Purely Blog - Mindful Living Articles')
+@section('title', 'My Blog - Mindful Living Articles')
 
 @section('content')
     <section class="container py-4 py-lg-5">

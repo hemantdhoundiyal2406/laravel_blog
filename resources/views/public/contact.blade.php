@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Contact - Purely Blog')
+@section('title', 'Contact - My Blog')
 
 @section('content')
     <section class="page-hero py-5">
@@ -48,7 +48,7 @@
                             <span class="category-icon bg-danger-subtle text-danger"><i class="bi bi-envelope"></i></span>
                             <div>
                                 <h3 class="h6 fw-bold">Email</h3>
-                                <p class="text-muted-soft mb-0">hello@purelyblog.com</p>
+                                <p class="text-muted-soft mb-0">hello@myblog.com</p>
                             </div>
                         </div>
                         <div class="d-flex gap-3">

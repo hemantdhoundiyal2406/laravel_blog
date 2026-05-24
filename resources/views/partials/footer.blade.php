@@ -5,8 +5,8 @@
                 <a class="d-flex align-items-center gap-2 mb-3" href="{{ route('home') }}">
                     <span class="navbar-brand-mark"><i class="bi bi-flower1"></i></span>
                     <span>
-                        <span class="brand-title">Purely</span>
-                        <span class="brand-subtitle">Balanced mindful living</span>
+                        <span class="brand-title">My Blog</span>
+                        <span class="brand-subtitle">Modern Laravel Blog</span>
                     </span>
                 </a>
                 <p class="text-muted-soft">Inspiring you to live a more mindful, balanced, and meaningful life.</p>
@@ -41,7 +41,7 @@
             <div class="col-lg-4 col-md-6">
                 <h6 class="section-label mb-3">Contact</h6>
                 <ul class="list-unstyled d-grid gap-3 text-muted-soft">
-                    <li><i class="bi bi-envelope me-2"></i> hello@purelyblog.com</li>
+                    <li><i class="bi bi-envelope me-2"></i> hello@myblog.com</li>
                     <li><i class="bi bi-geo-alt me-2"></i> Pune, India</li>
                     <li><i class="bi bi-clock me-2"></i> Monday - Friday: 9AM - 5PM</li>
                 </ul>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="border-top py-3 d-flex flex-column flex-md-row justify-content-between gap-2 text-muted-soft small">
-            <span>&copy; {{ date('Y') }} Purely Blog. All rights reserved.</span>
+            <span>&copy; {{ date('Y') }} My Blog. All rights reserved.</span>
             <span>Made with care for mindful living.</span>
         </div>
     </div>

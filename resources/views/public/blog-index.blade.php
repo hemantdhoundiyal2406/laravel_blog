@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', 'Blog Articles - Purely Blog')
+@section('title', 'Blog Articles - My Blog')
 
 @section('content')
     <section class="page-hero py-5">

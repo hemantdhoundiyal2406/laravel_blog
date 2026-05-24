@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', $post->title.' - Purely Blog')
+@section('title', $post->title.' - My Blog')
 
 @section('content')
     <section class="container py-5">
