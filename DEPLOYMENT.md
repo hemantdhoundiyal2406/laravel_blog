@@ -34,9 +34,9 @@ Open this URL after pushing the repo:
 https://dashboard.render.com/blueprint/new
 ```
 
-Select your repo. Render will detect `render.yaml`.
+Select your repo. Render will detect `render.yaml`. No required secret is needed for the first deploy.
 
-Fill these secret/env values in the Render Dashboard:
+After the first deploy, you can optionally add these env values in the Render Dashboard:
 
 ```env
 APP_URL=https://your-render-service-url.onrender.com

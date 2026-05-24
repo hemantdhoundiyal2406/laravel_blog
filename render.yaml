@@ -14,8 +14,6 @@ services:
         value: production
       - key: APP_DEBUG
         value: "false"
-      - key: APP_URL
-        sync: false
       - key: LOG_CHANNEL
         value: stderr
       - key: SESSION_DRIVER
@@ -36,8 +34,6 @@ services:
         value: "true"
       - key: MAIL_MAILER
         value: log
-      - key: ADMIN_EMAIL
-        sync: false
 
 databases:
   - name: purely-blog-db
