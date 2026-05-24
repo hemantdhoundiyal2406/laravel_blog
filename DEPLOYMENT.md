@@ -34,7 +34,19 @@ Open this URL after pushing the repo:
 https://dashboard.render.com/blueprint/new
 ```
 
-Select your repo. Render will detect `render.yaml`. No required secret is needed for the first deploy.
+Select your repo. Render will detect `render.yaml`.
+
+Render will ask for this secret:
+
+```env
+APP_KEY=base64:your-generated-laravel-key
+```
+
+Generate it locally with:
+
+```bash
+php artisan key:generate --show --no-ansi
+```
 
 After the first deploy, you can optionally add these env values in the Render Dashboard:
 
