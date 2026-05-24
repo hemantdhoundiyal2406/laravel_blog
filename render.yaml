@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: purely-blog
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: APP_NAME
+        value: Purely Blog
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_URL
+        sync: false
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: SESSION_DRIVER
+        value: database
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: database
+      - key: FILESYSTEM_DISK
+        value: public
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_URL
+        fromDatabase:
+          name: purely-blog-db
+          property: connectionString
+      - key: SEED_DATABASE
+        value: "true"
+      - key: MAIL_MAILER
+        value: log
+      - key: ADMIN_EMAIL
+        sync: false
+
+databases:
+  - name: purely-blog-db
+    databaseName: purely_blog
+    user: purely_blog_user
+    plan: free
